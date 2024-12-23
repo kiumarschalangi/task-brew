@@ -85,12 +85,12 @@ public class TaskBrew {
         }
 
         listTasks();
-        System.out.print("Enter the task number to mark as complete: ");
+        System.out.print(Constants.ENTER_TASK_NUM_T0_COMPLETE);
         try {
             int taskNumber = Integer.parseInt(scanner.nextLine());
             Task task = tasks.get(taskNumber - 1);
             task.markComplete();
-            System.out.println("Task marked as complete.");
+            System.out.println(Constants.TASK_MARKED_AS_COMPLETE);
         } catch (IndexOutOfBoundsException | NumberFormatException e) {
             System.out.println(Constants.INVALID_TASK_NUMBER);
         }
@@ -103,11 +103,11 @@ public class TaskBrew {
         }
 
         listTasks();
-        System.out.print("Enter the task number to remove: ");
+        System.out.print(Constants.ENTER_TASK_NUM_T0_COMPLETE);
         try {
             int taskNumber = Integer.parseInt(scanner.nextLine());
             tasks.remove(taskNumber - 1);
-            System.out.println("Task removed.");
+            System.out.println(Constants.TASK_REMOVED);
         } catch (IndexOutOfBoundsException | NumberFormatException e) {
             System.out.println(Constants.INVALID_TASK_NUMBER);
         }

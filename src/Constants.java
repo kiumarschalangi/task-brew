@@ -20,7 +20,10 @@ public final class Constants {
     public static final String ENTER_TASK_TITLE = "Enter task title: ";
     public static final String ENTER_TASK_DESCRIPTION = "Enter task description: ";
     public static final String ENTER_TASK_DUE_DATE = "Enter task due date (YYYY-MM-DD): ";
-    public static final String GOODBYE_MESSAGE = "Goodbye!";
+    public static final String GOODBYE_MESSAGE = "See you next time!";
     public static final String INVALID_TASK_NUMBER = "Invalid task number.";
     public static final String ERROR_SAVING_TASKS = "Error saving tasks.";
+    public static final String TASK_REMOVED = "Task removed.";
+    public static final String ENTER_TASK_NUM_T0_COMPLETE = "Enter the task number to mark as complete: ";
+    public static final String TASK_MARKED_AS_COMPLETE = "Task marked as complete.";
 }
