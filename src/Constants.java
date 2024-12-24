@@ -26,4 +26,5 @@ public final class Constants {
     public static final String TASK_REMOVED = "Task removed.";
     public static final String ENTER_TASK_NUM_T0_COMPLETE = "Enter the task number to mark as complete: ";
     public static final String TASK_MARKED_AS_COMPLETE = "Task marked as complete.";
+    public static final String INVALID_DATE_FORMAT = "Invalid date format. Please enter the date in the format yyyy-MM-dd.";
 }

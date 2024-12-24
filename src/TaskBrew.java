@@ -61,10 +61,23 @@ public class TaskBrew {
         System.out.print(Constants.ENTER_TASK_DESCRIPTION);
         String description = scanner.nextLine();
 
-        System.out.print(Constants.ENTER_TASK_DUE_DATE);
-        String dueDate = scanner.nextLine();
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-        LocalDate date = LocalDate.parse(dueDate, formatter);
+        LocalDate date = null;
+
+     while (date==null){
+    System.out.print(Constants.ENTER_TASK_DUE_DATE);
+    String dueDate = scanner.nextLine();
+    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+    try{
+        date = LocalDate.parse(dueDate, formatter);
+    }
+    catch (DateTimeParseException e) {
+        System.out.println(Constants.INVALID_DATE_FORMAT);
+    }
+
+}
+
+
+
 
         Task task = new Task(title, description, date);
         tasks.add(task);
