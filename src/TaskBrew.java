@@ -1,6 +1,8 @@
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
 
 public class TaskBrew {
     private final ArrayList<Task> tasks = new ArrayList<>();
@@ -61,8 +63,10 @@ public class TaskBrew {
 
         System.out.print(Constants.ENTER_TASK_DUE_DATE);
         String dueDate = scanner.nextLine();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        LocalDate date = LocalDate.parse(dueDate, formatter);
 
-        Task task = new Task(title, description, LocalDate.now());
+        Task task = new Task(title, description, date);
         tasks.add(task);
 
         System.out.println(Constants.TASK_ADDED);
