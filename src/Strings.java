@@ -1,7 +1,7 @@
 
-public final class Constants {
+public final class Strings {
 
-    private Constants() {}
+    private Strings() {}
 
     // Menu options
     public static final String MENU_HEADER = "Menu:";
