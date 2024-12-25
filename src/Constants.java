@@ -12,7 +12,7 @@ public final class Constants {
     public static final String MENU_EXIT = "5. Exit";
 
     // Messages
-    public static final String WELCOME_MESSAGE = "Welcome to TaskBrew!";
+    public static final String WELCOME_MESSAGE = "Welcome to TaskBrew";
     public static final String ENTER_CHOICE = "Enter your choice: ";
     public static final String TASK_ADDED = "Task added successfully!";
     public static final String INVALID_CHOICE = "Invalid choice. Please try again.";
