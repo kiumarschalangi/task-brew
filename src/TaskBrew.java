@@ -10,13 +10,12 @@ public class TaskBrew {
 
     public static void main(String[] args) {
         TaskBrew app = new TaskBrew();
+        System.out.println( AnsiColors.GREEN+ Strings.WELCOME_MESSAGE  + AnsiColors.RESET);
         app.run();
     }
 
     public void run() {
-        System.out.println( AnsiColors.GREEN+ Strings.WELCOME_MESSAGE  + AnsiColors.RESET);
         boolean running = true;
-
         while (running) {
             printMenu();
             System.out.print(Strings.ENTER_CHOICE);
@@ -98,7 +97,7 @@ public class TaskBrew {
     private void markTaskAsComplete() {
         if (tasks.isEmpty()) {
             System.out.println(AnsiColors.YELLOW + Strings.NO_TASKS_AVAILABLE + AnsiColors.RESET);
-            return;
+
         }
 
         listTasks();
@@ -116,7 +115,7 @@ public class TaskBrew {
     private void removeTask() {
         if (tasks.isEmpty()) {
             System.out.println(AnsiColors.YELLOW + Strings.NO_TASKS_AVAILABLE + AnsiColors.RESET);
-            return;
+
         }
 
         listTasks();
